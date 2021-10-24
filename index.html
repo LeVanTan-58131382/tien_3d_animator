@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <title>Reflux HTML CSS Template</title>
+<!--
+Reflux Template
+https://templatemo.com/tm-531-reflux
+-->
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
+
+    <style>
+      body::-webkit-scrollbar {
+          width: 7px;
+          height: 7px;
+          /* background-color: #181828; */
+          background-color: #FEB249;
+          }
+  
+      body::-webkit-scrollbar-track {
+              background-color: #eeeeee;
+              border-radius: 5px;
+          }
+  
+      body::-webkit-scrollbar-thumb {
+              border-radius: 10px;
+              /* background-color: #242526; */
+              background-color: #FEB249;
+          }
+      </style>
+
+    <style>
+      #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  visibility: hidden;
+  position: fixed; /* Stay in place */
+  z-index: 99999; /* Sit on top */
+  padding-top: 10px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 1000px;
+  height: 680px;
+  border-radius: 8px;
+}
+
+/* Caption of Modal Image */
+.caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #FEB249;
+  font-size: 20px;
+  padding: 10px 0;
+  height: 50px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 70px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #FEB249;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+    </style>
+  </head>
+
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <!-- <a href="#"><img src="assets/images/author-image.jpg" alt="" /></a> -->
+              <a href="#"><img src="https://live.staticflickr.com/65535/51625130621_fc2c6ec8e3_c.jpg" alt="" /></a>
+            </div>
+            <div class="author-content">
+              <h4>Lê Văn Tiến</h4>
+              <span>3D Animator</span>
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+
+                <li><a href="#section1">Thông tin</a></li>
+                <li><a href="#section2">Kỹ năng</a></li>
+                <li><a href="#section3">Dự án</a></li>
+                <li><a href="#section4">Liên hệ</a></li>
+              </ul>
+            </nav>
+            <div class="social-network">
+              <ul class="soial-icons">
+                <li>
+
+                  <a target="blank" href="https://www.facebook.com/profile.php?id=100009200746434"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-rss"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright-text">
+              <!-- <p>Copyright 2019 Reflux Design</p> -->
+              <p>Copyright 2021 By VanTan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section about-me" data-section="section1">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Thông tin</h2>
+            <div class="line-dec"></div>
+            
+          </div>
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img src="https://live.staticflickr.com/65535/51625882624_4f7131601f_b.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+                  <h4>Thông tin cá nhân</h4>
+                  <p style="line-height: 30px;"><b>Họ tên: </b>Lê Văn Tiến <br>
+                    <b>Giới tính: </b>Nam <br>
+                    <b>Ngày sinh: </b>15-08-1998 <br>
+                    <b>Quê quán: </b>Thành Phố Phan Rang - Tháp Chàm, Ninh Thuận</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text">
+                  <h4>Kinh nghiệm công việc</h4>
+                  <p style="line-height: 30px;">
+                    Công ty: <b>Bloom VietNam</b><br>
+                    Công việc đảm nhận: <b>3D Animator</b><br>
+                    Năm làm việc: <b>2 năm</b><br>
+                  </p>
+
+                  <p style="line-height: 30px;">
+                     Sau 2 năm làm việc tại Bloom VietNam, được làm việc trong một môi trường chuyên nghiệp, được tham gia vào nhiều dự án chính thức của công ty, kỹ năng chuyên môn của tôi dành cho công việc được tăng lên đáng kể, kỹ năng làm việc nhóm cũng như khả năng phân tích đúng vấn đề và các yêu cầu khi nhận Scene của dự án cũng được nâng cao. Tôi tự tin có thể thích ứng nhanh và tạo được nhiều giá trị khi đến với những môi trường chuyên nghiệp mới.
+                  </p>
+                  
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-image">
+                  <img src="https://live.staticflickr.com/65535/51620842269_ea83f878fc_z.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-services" data-section="section2">
+        <div class="container">
+          <div style="text-align: left;" class="section-heading">
+            <h2 style="text-align: center;">Kỹ Năng</h2>
+            <div class="line-dec"></div>
+            <span >
+              <p>_ Thành thạo phần mềm 3Ds Max, 3D Maya.</p>
+              <p>_ Có kiến thức về cử động nhân vật, biểu cảm nhân vật.</p>
+              <p>_ Diễn hoạt tốt Animation 3D.</p> 
+              <p>_ Kinh nghiệm làm việc với cut scenes.</p>
+              <p>_ Thành thạo lên key animation cho 3DsMax/Maya.</p>
+              <p>_ Cảm nhận tốt về weight và timing khi lên animation.</p></span
+            >
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="first-service-icon service-icon"></div>
+                <h4 class="titulo">Maya 3D</h4>
+
+                <div class="my-progress progress-striped">
+                  <div class="progress-bar-maya3d">
+                  </div>
+                </div> 
+                <br>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="fourth-service-icon service-icon"></div>
+                <h4>3DS Max</h4>
+
+                <div class="my-progress progress-striped">
+                  <div class="progress-bar-orther">
+                  </div>                       
+                </div>
+                <br>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="second-service-icon service-icon"></div>
+                <h4>After Effect</h4>
+
+                <div class="my-progress progress-striped">
+                  <div class="progress-bar-ae">
+                  </div>                       
+                </div>
+                <br>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="third-service-icon service-icon"></div>
+                <h4>Photoshop</h4>
+
+                <div class="my-progress progress-striped">
+                  <div class="progress-bar-photoshop">
+                  </div>                       
+                </div>
+                <br>
+
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-work" data-section="section3">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Dự án</h2>
+            <div class="line-dec"></div>
+            <span
+              >Những dự án chính thức tôi tham gia thực hiện tại Công ty Bloom VietNam .</span
+            >
+          </div>
+          <div class="row">
+            <div class="isotope-wrapper">
+              <form class="isotope-toolbar">
+                <label
+                  ><input
+                    type="radio"
+                    data-type="*"
+                    checked=""
+                    name="isotope-filter"
+                  />
+                  <span>Tất cả</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="Titipo"
+                    name="isotope-filter"
+                  />
+                  <span>Titipo</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="Minifore"
+                    name="isotope-filter"
+                  />
+                  <span>Minifore</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="Jouju"
+                    name="isotope-filter"
+                  />
+                  <span>Jouju</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="Comi"
+                    name="isotope-filter"
+                  />
+                  <span>Comi and BeBe</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="Training"
+                    name="isotope-filter"
+                  />
+                  <span>Dự án Training</span></label
+                >
+              </form>
+
+              <div class="isotope-box">
+
+              <div class="isotope-item" data-type="Jouju">
+                <figure class="snip1321">
+                  <img
+                    src="https://live.staticflickr.com/65535/51625668859_245bedced4_h.jpg"
+                    alt="sq-sample26"
+                  />
+                  <figcaption>
+                    <i class="fa fa-search xem" id="xem-jouju" title="Click để xem"></i>
+                    <h4>Jouju</h4>
+                    <a href="https://drive.google.com/file/d/1O5p8-6oIQVi7FbRQc6Oi6skN1VmoIUYZ/view?fbclid=IwAR1mHASC40J1NbOnF9WEAH3Ri5UQy9M1HtHUD0gKWgpNEqLJx-uLzRujlEY" target="blank"><span>Link File Video Google Drive (Click để tải)</span></a>
+                  </figcaption>
+                </figure>
+              </div>
+
+                <div class="isotope-item" data-type="Minifore">
+                  <figure class="snip1321">
+                    <img
+                      src="https://live.staticflickr.com/65535/51625669694_d47516c04b_h.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <i class="fa fa-search xem" id="xem-minifore" title="Click để xem"></i>
+                      <h4>Minifore</h4>
+                      <a href="https://drive.google.com/file/d/1mwel9lHAQVjHy6bm3bJfODS2JOGnie8t/view?usp=sharing" target="blank"><span>Link File Video Google Drive (Click để tải)</span></a>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="Titipo">
+                  <figure class="snip1321">
+                    <img
+                      src="https://live.staticflickr.com/65535/51624212357_12742fc5bd_b.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <i class="fa fa-search xem" id="xem-titipo" title="Click để xem"></i>
+                      <h4>Titipo</h4>
+                      <a href="https://drive.google.com/file/d/1gs_Z7bgRWldfUxBBbrscgfo96qRH0AEB/view?usp=sharing" target="blank"><span>Link File Video Google Drive (Click để tải)</span></a>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="Comi">
+                  <figure class="snip1321">
+                    <img
+                      src="https://live.staticflickr.com/65535/51625019911_ca22cc13a8_h.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <i class="fa fa-search xem" id="xem-comi" title="Click để xem"></i>
+                      <h4>Comi and BeBe</h4>
+                      <a href="https://drive.google.com/file/d/1KYz7-uG7x6azbx1jZIsqO2ABkVQV3F9u/view?usp=sharing" target="blank"><span>Link File Video Google Drive (Click để tải)</span></a>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="Training">
+                  <figure class="snip1321">
+                    <img
+                      src="https://live.staticflickr.com/65535/51625887030_2fc3f1fcef_b.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <i class="fa fa-search xem" id="xem-training" title="Click để xem"></i>
+                      <h4>Dự án Training</h4>
+                      <a href="https://drive.google.com/file/d/1HtbpG6oCMKoNvinIpIqLrQ4U_ZDWTdNM/view?usp=sharing" target="blank"><span>Link File Video Google Drive (Click để tải)</span></a>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-me" data-section="section4">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Liên hệ</h2>
+            <div class="line-dec"></div>
+            
+          </div>
+          <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-3 phone-t">
+                        <b>Phone: 0337 266 655</b>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-3 email-t">
+                        <b>Email: letienlv02@gmail.com</b>
+                    </div>
+                    <div class="col-md-2"></div>
+                  </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+
+    <!-- The Modal Titio -->
+    <div id="myModal-titipo" class="modal">
+      <span class="close">&times;</span>
+      <iframe id="i-titipo" class="modal-content" src="https://files.fm/f/78fmvwm73" title="Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div id="caption-titipo" class="caption"></div>
+    </div>
+
+    <!-- The Modal Minifore -->
+    <div id="myModal-minifore" class="modal">
+      <span class="close">&times;</span>
+      <iframe id="i-minifore" class="modal-content" src="https://files.fm/f/spy2c4nhg" title="Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div id="caption-minifore" class="caption"></div>
+    </div>
+
+    <!-- The Modal Jouju -->
+    <div id="myModal-jouju" class="modal">
+      <span class="close">&times;</span>
+      <iframe id="i-jouju" class="modal-content" src="https://files.fm/f/z69cwgtm7" title="Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div id="caption-jouju" class="caption"></div>
+    </div>
+
+    <!-- The Modal Comi and Bebe -->
+    <div id="myModal-comi" class="modal">
+      <span class="close">&times;</span>
+      <iframe id="i-comi" class="modal-content" src="https://files.fm/f/zyjvpkrzk" title="Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div id="caption-comi" class="caption"></div>
+    </div>
+
+    <!-- The Modal Training -->
+    <div id="myModal-training" class="modal">
+      <span class="close">&times;</span>
+      <iframe id="i-training" class="modal-content" src="https://files.fm/f/5hfdkb4ux" title="Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div id="caption-training" class="caption"></div>
+    </div>
+    
+
+    <script>
+      // Get the modal
+      var modal_titipo = document.getElementById("myModal-titipo");
+      
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var titipo = document.getElementById("xem-titipo");
+
+      var i_titipo = document.getElementById("i-titipo");
+  
+      var captionText = document.getElementById("caption-titipo");
+      titipo.onclick = function(){
+        modal_titipo.style.display = "block";
+        modal_titipo.style.visibility = "visible";
+        captionText.innerHTML = "Titipo Project";
+      }
+      
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close");
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() { 
+        modal_titipo.style.display = "none";
+        modal_titipo.style.visibility = "hidden";
+        i_titipo.setAttribute('src', i_titipo.getAttribute('src'));
+      }
+
+      modal_titipo.onclick = function() { 
+        modal_titipo.style.display = "none";
+        modal_titipo.style.visibility = "hidden";
+        i_titipo.setAttribute('src', i_titipo.getAttribute('src'));
+      }
+
+      
+    </script>
+
+<script>
+  // Get the modal
+  var modal_minifore = document.getElementById("myModal-minifore");
+  
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var minifore = document.getElementById("xem-minifore");
+
+  var i_minifore = document.getElementById("i-minifore");
+
+  var captionText = document.getElementById("caption-minifore");
+  minifore.onclick = function(){
+    modal_minifore.style.display = "block";
+    modal_minifore.style.visibility = "visible";
+    captionText.innerHTML = "Minifore Project";
+  }
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close");
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+    modal_minifore.style.display = "none";
+    modal_minifore.style.visibility = "hidden";
+    i_minifore.setAttribute('src', i_minifore.getAttribute('src'));
+  }
+
+  modal_minifore.onclick = function() { 
+    modal_minifore.style.display = "none";
+    modal_minifore.style.visibility = "hidden";
+    i_minifore.setAttribute('src', i_minifore.getAttribute('src'));
+  }
+
+  
+</script>
+
+<script>
+  // Get the modal
+  var modal_jouju = document.getElementById("myModal-jouju");
+  
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var jouju = document.getElementById("xem-jouju");
+
+  var i_jouju = document.getElementById("i-jouju");
+
+  var captionText = document.getElementById("caption-jouju");
+  jouju.onclick = function(){
+    modal_jouju.style.display = "block";
+    modal_jouju.style.visibility = "visible";
+    captionText.innerHTML = "Jouju Project";
+  }
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close");
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+    modal_jouju.style.display = "none";
+    modal_jouju.style.visibility = "hidden";
+    i_jouju.setAttribute('src', i_jouju.getAttribute('src'));
+  }
+
+  modal_jouju.onclick = function() { 
+    modal_jouju.style.display = "none";
+    modal_jouju.style.visibility = "hidden";
+    i_jouju.setAttribute('src', i_jouju.getAttribute('src'));
+  }
+
+  
+</script>
+
+<script>
+  // Get the modal
+  var modal_comi = document.getElementById("myModal-comi");
+  
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var comi = document.getElementById("xem-comi");
+
+  var i_comi = document.getElementById("i-comi");
+
+  var captionText = document.getElementById("caption-comi");
+  comi.onclick = function(){
+    modal_comi.style.display = "block";
+    modal_comi.style.visibility = "visible";
+    captionText.innerHTML = "Comi Project";
+  }
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close");
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+    modal_comi.style.display = "none";
+    modal_comi.style.visibility = "hidden";
+    i_comi.setAttribute('src', i_comi.getAttribute('src'));
+  }
+
+  modal_comi.onclick = function() { 
+    modal_comi.style.display = "none";
+    modal_comi.style.visibility = "hidden";
+    i_comi.setAttribute('src', i_comi.getAttribute('src'));
+  }
+
+  
+</script>
+
+<script>
+  // Get the modal
+  var modal_training = document.getElementById("myModal-training");
+  
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var training = document.getElementById("xem-training");
+
+  var i_training = document.getElementById("i-training");
+
+  var captionText = document.getElementById("caption-training");
+  training.onclick = function(){
+    modal_training.style.display = "block";
+    modal_training.style.visibility = "visible";
+    captionText.innerHTML = "Training Project";
+  }
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close");
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+    modal_training.style.display = "none";
+    modal_training.style.visibility = "hidden";
+    i_training.setAttribute('src', i_training.getAttribute('src'));
+  }
+
+  modal_training.onclick = function() { 
+    modal_training.style.display = "none";
+    modal_training.style.visibility = "hidden";
+    i_training.setAttribute('src', i_training.getAttribute('src'));
+  }
+
+
+  
+  
+</script>
+
+
+<!-- <script type="text/javascript" src="https://files.fm/embed/playerv2?hash=z69cwgtm7&autoplay=off&autoload=off&w=100%&h=auto&poster_src=https://files.fm/thumb_video_picture.php?i=z69cwgtm7" id="filesfm_embed_js__z69cwgtm7"></script> -->
+
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+  </body>
+</html>
